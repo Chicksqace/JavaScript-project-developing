@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.inp{
+				color: #ccc;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" class="inp" value="邮箱/ID/手机号" />
+	</body>
+	<script type="text/javascript">
+		var inp=document.querySelector('.inp')
+		inp.onfocus=function(){
+			this.value=""
+			this.style.border="5px solid pink"
+		}
+		inp.onblur=function(){
+			this.value="邮箱/ID/手机号"
+			this.style.border="1px solid black"
+		}
+	</script>
+</html>

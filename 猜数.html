@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// function getRandomArbitrary(min, max) {
+			//   return Math.random() * (max - min) + min;
+			// }得到一个两数之间的随机数
+			function getRandomInt(min, max) {
+			  min = Math.ceil(min);
+			  max = Math.floor(max);
+			  return Math.floor(Math.random() * (max - min)) + min; //不含最大值，含最小值
+			}
+
+			var random=getRandomInt(1,10);
+			while(true){//死循环
+				var num=prompt('你来猜输入1-10个数')
+				if(num>random){
+					alert('你太大了');
+				}else if(num<random){
+					alert('你太小了');
+				}else{
+					alert('ok')
+					break
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			img{
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/angel.gif" alt="" srcset="">
+		<script>
+			var pic=document.querySelector('img')
+			document.addEventListener('mousemove',function(e){
+				// 1.mousemove只要鼠标移动，都会触发这个事件
+				var x=e.pageX;
+				var y=e.pageY;
+				pic.style.left=x-50+'px';
+				pic.style.top=y-40+'px';
+			});
+		</script>
+	</body>
+</html>

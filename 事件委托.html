@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>知否知否，应该有弹框在手</li>
+			<li>知否知否，应该有弹框在手</li>
+			<li>知否知否，应该有弹框在手</li>
+			<li>知否知否，应该有弹框在手</li>
+			<li>知否知否，应该有弹框在手</li>
+		</ul>
+		<script>
+			var ul=document.querySelector('ul')
+			ul.addEventListener('click',function(e){
+				alert('你点了我')
+				e.target.style.backgroundColor='pink';
+				console.log(e)
+			})
+		</script>
+	</body>
+</html>

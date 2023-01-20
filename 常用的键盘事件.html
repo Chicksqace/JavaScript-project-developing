@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 1.keyup按键弹起的时候触发
+			document.onkeyup=function(){
+				alert('我松手了')
+			}
+			// 2.keydown按键按下的时候触发
+			document.addEventListener('keydown',function(){
+				alert('按下')
+			})
+			// 3.keypress按键按下的时候触发 不识别功能键 例如ctrl,shift 
+			document.addEventListener('keypress',function(){
+				alert('按下')
+			})
+		</script>
+	</body>
+</html>

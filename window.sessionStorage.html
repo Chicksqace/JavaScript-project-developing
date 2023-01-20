@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text">
+		<button class="set">存储数据</button>
+		<button class="get">获取数据</button>
+		<button class="remove">删除数据</button>
+		<button class="del">清空数据</button>
+		<script>
+			var ipt=document.querySelector('input');
+			var set=document.querySelector('.set');
+			var get=document.querySelector('.get');
+			var remove=document.querySelector('.remove');
+			var del=document.querySelector('.del');
+			set.addEventListener('click',function(){
+				// 当我们点击了之后，就可以把表单里面的值存储起来
+				var val=ipt.value;
+				sessionStorage.setItem('usname',val);
+				sessionStorage.setItem('pass',val);
+			})
+			get.addEventListener('click',function(){
+				// 当我们点击了之后，就可以把表单里面的值获取过来
+				console.log(sessionStorage.getItem('usname'));
+			})
+			remove.addEventListener('click',function(){
+				// 当我们点击了之后，就可以把表单里面的值清除
+				sessionStorage.removeItem('usname');
+			})
+			del.addEventListener('click',function(){
+				// 当我们点击了之后，清除所有
+				sessionStorage.clear('usname');
+			})
+		</script>
+	</body>
+</html>

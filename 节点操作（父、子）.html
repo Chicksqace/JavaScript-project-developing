@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+		<ol>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ol>
+		<div class="demo">
+			<div class="box">
+				<span class="erweima">X</span>
+			</div>
+		</div>
+		<script>
+			// // 1.父节点 parentNode
+			// var erweima=document.querySelector('.erweima');
+			// // 得到的是离元素最近的父级节点（亲爸爸）如果找不到父节点就返回为null
+			// console.log(erweima.parentNode);
+			
+			// 2.子节点 childNodes所有的子节点 包含 元素节点 文本节点等等
+			var ul=document.querySelector('ul');
+			console.log(ul.childNodes);
+			console.log(ul.childNodes[0].nodeType)
+			// children获取所有元素节点
+			console.log(ul.children)//常用的
+		</script>
+	</body>
+</html>

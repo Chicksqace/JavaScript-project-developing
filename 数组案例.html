@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			/*var arr1=new Array(2)//这个2表示数组的长度为2
+			var arr1=new Array(2,3)//等价于【2,3】这样写表示	里面有俩个数组元素 2和3*/
+			
+			/*// 判断数组 1.instanceof 运算符 2.Array.isArray(参数) H5新增的方法 ie9以前版本以上
+			var arr=[];
+			console.log(arr instanceof Array)
+			console.log(Array.isArray(arr))*/
+			
+			/*添加数组元素
+			1 push()在我们数组的末尾 添加一个或者多个数组元素.
+		    push 是可以给数组追加新的元素
+			push()参数可以直接写 数组元素就可以了
+			push完毕之后 返回的是新数组的长度
+			原数组也会发生变化
+			var arr=[1,2,3]
+			console.log(arr.push(4,'hello'));
+			
+			unshift在我们数组的开头 添加一个或者多个数组元素.
+			效果跟push()一样
+			var arr=[1,2,3]
+			console.log(arr.unshift(4,'hello'));*/
+			
+			/*删除数组元素
+			pop()它可以删除数组的最后一个元素，记住一次只能删除一个元素
+			pop()没有参数
+			pop()完毕之后，返回的结果为 删除的那个元素
+			原数组也会发生变化
+			var arr=[1,2,3]
+			console.log(arr.pop());
+			shift和pop()一样，但是shift是删除的第一个
+			*/
+		   
+		   /*// 有一个包含工资的数组[1500, 1200, 2000, 2100, 1800]，要求把数组中工资超过2000的删除，剩余的放到新数组里面
+		   var arr=[1500, 1200, 2000, 2100, 1800];
+		   var newArr=[];
+		   for(var i=0;i<arr.length;i++){
+			   if(arr[i]<2000){
+				   newArr.push(arr[i])
+			   }
+		   }
+			console.log(newArr)*/
+			
+			/*// 数组排序
+			// 1.翻转数组
+			var arr=['s','d','q'];
+			arr.reverse();
+			console.log(arr)
+			
+			// 2.数组排序
+			var arr1=[1,22,34,5,7]
+			console.log(arr1.sort(function(a,b){
+				// return a-b;//升序的顺序排列
+				return b-1//降序的顺序排列
+			}));*/
+			
+			/*// 获取数组元素索引 
+			// 返回数组元素索引号方法indexof(数组元素) 作用作用是就是返回数组元素的索引号，从前面开始查找
+			 // 它只返回第一个满足条件的索引号
+			 // 它如果在该数组里面找不到元素，则返回-1
+			 var arr=['s','a','c','s','q']
+			 console.log(arr.indexOf('s'))
+			 // lastIndexOf()是从后面开始查找
+			 console.log(arr.lastIndexOf('s'))*/
+			 
+			 //数组去重
+			 // 封装去重函数 unique独一无二的
+			 
+			 /*function unique(arr){
+				 var newArr=[];
+				 for(var i=0; i<arr.length;i++){
+					 if (newArr.indexOf(arr[i])===-1){
+						 newArr.push(arr[i])
+					 }
+				 }
+				 return newArr;
+			 }
+			 var demo=unique(['c', 'a', 'z', 'a', 'x', 'a', 'x', 'c', 'b'])
+			 console.log(demo)*/
+			 
+			 //  数组变成字符串
+			 // 1.	toString()将我们的数组转换为字符串
+			 var arr=[1,2,3];
+			 console.log(arr.toString());//1,2,3
+			 // 2.join(分隔符)
+			 var arr1=['s','a','v']
+			 console.log(arr1.join("-"))
+		</script>
+	</body>
+</html>

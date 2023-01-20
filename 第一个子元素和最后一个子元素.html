@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ol>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ol>
+		<script>
+			var ol=document.querySelector('ol'); 
+			// 1.firstChild第一个子节点 不管文本节点还是元素节点
+			console.log(ol.firstChild);
+			console.log(ol.lastChild);
+			// 2.firstElementChild	返回第一个子元素节点 ie9以上
+			console.log(ol.firstElementChild);
+			console.log(ol.lastElementChild);
+			// 3.在实际开发中，考虑兼容性问题并返回第一个元素
+			console.log(ol.children[0])
+			console.log(ol.children[ol.children.length-1])
+		</script>
+	</body>
+</html>

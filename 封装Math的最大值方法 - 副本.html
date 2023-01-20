@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var myMath={
+				PI:3.14,
+				max:function(){
+					var max=arguments[0];
+					for(var i=1;i<arguments.length;i++){
+						if(arguments[i]>max){
+							max=arguments[i]
+						}
+					}
+					return max
+				},
+				min:function(){
+					var min=arguments[0];
+					for(var i=1;i<arguments.length;i++){
+						if(arguments[i]>min){
+							min=arguments[i]
+						}
+					}
+					return min
+				}
+			}
+			console.log(myMath.max(1,5,9));
+		</script>
+	</body>
+</html>

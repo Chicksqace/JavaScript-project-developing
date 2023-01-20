@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div></div>
+		<script>
+			// console.log(location.search)//?uname=1111
+			// 1.先去掉？ substr('起始的位置'，截取几个字符)
+			var params=location.search.substr(1);//uname=1111
+			// console.log(params)
+			// 2.利用=把字符串分割为数组 split('=')
+			var arr=params.split('=');
+			// console.log(arr)  (2) ['uname', '1111']0: "uname"1: "1111"length: 2[[Prototype]]: Array(0)
+			var div=document.querySelector('div')
+			// 把数据写入div中
+			div.innerHTML=arr[1]+"欢迎你";
+		</script>
+	</body>
+</html>

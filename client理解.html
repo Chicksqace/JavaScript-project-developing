@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+				padding: 20px;
+				border: 10px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<script>
+			// var div=document.querySelector('div')
+			// console.log(div.clientWidth)
+			// console.log(div.clientTop)
+			    // 1.立即执行函数: 不需要调用，立马能够自己执行的函数
+			        function fn() {
+			            console.log(1);
+			
+			        }
+			        fn();
+			        // 2. 写法 也可以传递参数进来
+			        // 1.(function() {})()    或者  2. (function(){}());
+			        (function(a, b) {
+			            console.log(a + b);
+			            var num = 10;
+			        })(1, 2); // 第二个小括号可以看做是调用函数
+			        (function sum(a, b) {
+			            console.log(a + b);
+			            var num = 10; // 局部变量
+			        }(2, 3));
+			        // 3. 立即执行函数最大的作用就是 独立创建了一个作用域, 里面所有的变量都是局部变量 不会有命名冲突的情况
+		</script>
+	</body>
+</html>

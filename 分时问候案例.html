@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			img{
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/s.jpg" alt="">
+		<div>上午好</div>
+		<script>
+		// 	 根据不同时间，页面显示不同图片，同时显示不同的问候语。
+			
+		// 	如果上午时间打开页面，显示上午好，显示上午的图片。
+			
+		// 	如果下午时间打开页面，显示下午好，显示下午的图片。
+			
+		// 	如果晚上时间打开页面，显示晚上好，显示晚上的图片。
+		
+		// 1.获取元素
+		var img=document.querySelector('img');
+		var div=document.querySelector('div')
+		// 2.获取小时
+		var date=new Date();
+		var h =date.getHours();
+		// 3.判断
+		if(h<12){
+			img.src='img/s.jpg'
+			div.innerHTML='上午好'
+		}else if(h<18){
+			img.src='img/x.jpg'
+			div.innerHTML='下午好'
+		}else{
+			img.src='img/w.jpg'
+			div.innerHTML='晚上好'
+		}
+		</script>
+	</body>
+</html>

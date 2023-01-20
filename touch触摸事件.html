@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<script>
+			var div=document.querySelector('div');
+			div.addEventListener('touchstart',function(e){
+				console.log(e);
+				// touches正在触摸屏幕的所有手指列表
+				// targetTouches正在触摸当前元素的的手指列表
+				// 我们现在侦听的是div 如果侦听的是一个dom元素，他们俩是一样的
+				// changeTouches 手指状态发生改变的列表，从无到有 或者从有到无
+				// 我们一般都是触摸元素，所以最经常使用的是targetTouches
+				// targetTouches[0]就可以得到正在触摸dom元素的第一手指相关信息比如手指的坐标等等
+			})
+			div.addEventListener('touchmove',function(){
+				console.log('手指滑动事件')
+			})
+			div.addEventListener('touchend',function(){
+				console.log('触摸离开')
+			})
+		</script>
+	</body>
+</html>
